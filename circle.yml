@@ -1,6 +1,9 @@
-dependencies:
-  pre:
-    - npm install npm@latest -g
+machine:
+  node:
+    version: 6.9.0
+test:
+  override:
+    - karma start ./karma.conf.js
 deployment:
   staging:
     branch: master
