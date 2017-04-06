@@ -1,6 +1,10 @@
-test:
-  override:
-    - npm run test
+machine:
+  node:
+    version: 6.8.0
+dependencies:
+  pre:
+    - npm install npm@latest -g
+    - npm install @angular/cli@latest -g
 deployment:
   staging:
     branch: master
